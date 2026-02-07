@@ -28,10 +28,10 @@ const Hero = () => {
     document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })
   }
 
-  const downloadCV = () => {
-    // In a real implementation, link to your actual CV
-    window.open('/CV_Wafi_Fahruzzaman.pdf', '_blank')
-  }
+  // const downloadCV = () => {
+  //   // In a real implementation, link to your actual CV
+  //   window.open('/CV_Wafi_Fahruzzaman.pdf', '_blank')
+  // }
 
   return (
     <section id="home" className="hero">
