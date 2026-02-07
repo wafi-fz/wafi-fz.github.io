@@ -44,19 +44,35 @@ npm run dev
 
 4. Open your browser and navigate to `http://localhost:5173`
 
-### Build for Production
+### Build for Production (Static Files)
 
 ```bash
 npm run build
 ```
 
-The built files will be in the `dist` directory.
+The built files will be in the `dist` directory. This is a **fully static build** ready to deploy anywhere!
 
 ### Preview Production Build
 
 ```bash
 npm run preview
 ```
+
+## Deployment
+
+This is a **static website** that can be deployed to any hosting platform. See [DEPLOYMENT.md](./DEPLOYMENT.md) for detailed deployment guides.
+
+**Quick Deploy Options:**
+- GitHub Pages (free)
+- Netlify (free)
+- Vercel (free)
+- Cloudflare Pages (free)
+- Any static hosting (cPanel, etc.)
+
+**Simple deployment:**
+1. Run `npm run build`
+2. Upload the `dist` folder contents to your hosting
+3. Done! ✅
 
 ## Customization
 
