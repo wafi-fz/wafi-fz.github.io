@@ -12,8 +12,8 @@ const About = () => {
         <div className="about-content">
           <div className="about-text">
             <p className="about-intro">
-              I am a passionate programmer who enjoys working in software development,
-              with a special focus on <span className="highlight">backend development</span>.
+              I am a passionate programmer who enjoys working in <span className="highlight">end-to-end software development</span>.
+              {/* with a special focus on <span className="highlight">backend development</span>. */}
             </p>
             <p>
               My journey in software engineering has equipped me with expertise in building
