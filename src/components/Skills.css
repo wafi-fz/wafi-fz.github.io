@@ -1,0 +1,229 @@
+.skills {
+  padding: 6rem 2rem;
+  background: linear-gradient(to bottom, #f9fafb 0%, #ffffff 100%);
+}
+
+.skills-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 3rem;
+  margin-top: 3rem;
+}
+
+.subsection-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 2rem;
+  position: relative;
+  padding-left: 1rem;
+}
+
+.subsection-title::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 4px;
+  height: 70%;
+  background: linear-gradient(to bottom, var(--primary-blue), var(--light-blue));
+  border-radius: 2px;
+}
+
+.technical-skills {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.skill-category {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(57, 103, 237, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-category:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 25px rgba(57, 103, 237, 0.12);
+}
+
+.category-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--primary-blue);
+  margin-bottom: 1.5rem;
+}
+
+.skills-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.skill-item {
+  width: 100%;
+}
+
+.skill-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.skill-name {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.skill-percentage {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--primary-blue);
+}
+
+.skill-bar {
+  height: 8px;
+  background-color: var(--card-background);
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+.skill-progress {
+  height: 100%;
+  background: linear-gradient(90deg, var(--primary-blue), var(--light-blue));
+  border-radius: 10px;
+  transition: width 1s ease-out;
+  animation: progressAnimation 1.5s ease-out;
+}
+
+@keyframes progressAnimation {
+  from {
+    width: 0;
+  }
+}
+
+.additional-skills {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.patterns-card,
+.soft-skills-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(57, 103, 237, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.patterns-card:hover,
+.soft-skills-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 25px rgba(57, 103, 237, 0.12);
+}
+
+.patterns-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.pattern-tag {
+  padding: 1rem 1.2rem;
+  background: var(--card-background);
+  border-radius: 8px;
+  border-left: 3px solid var(--primary-blue);
+  font-weight: 500;
+  color: var(--text-primary);
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.pattern-tag:hover {
+  background: #e8f0fe;
+  transform: translateX(5px);
+}
+
+.pattern-icon {
+  color: var(--primary-blue);
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.soft-skills-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.soft-skill-item {
+  padding: 1rem;
+  background: var(--card-background);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0.5rem;
+  transition: all 0.3s ease;
+  cursor: default;
+}
+
+.soft-skill-item:hover {
+  background: #e8f0fe;
+  transform: translateY(-3px);
+}
+
+.soft-skill-icon {
+  font-size: 2rem;
+}
+
+.soft-skill-name {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+@media (max-width: 968px) {
+  .skills-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .soft-skills-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .skills {
+    padding: 4rem 1.5rem;
+  }
+
+  .skill-category,
+  .patterns-card,
+  .soft-skills-card {
+    padding: 1.5rem;
+  }
+
+  .soft-skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .subsection-title {
+    font-size: 1.3rem;
+  }
+}
