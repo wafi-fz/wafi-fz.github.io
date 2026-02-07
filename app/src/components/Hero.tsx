@@ -61,9 +61,9 @@ const Hero = () => {
               <button className="btn btn-primary" onClick={scrollToContact}>
                 Get In Touch
               </button>
-              <button className="btn btn-secondary" onClick={downloadCV}>
+              {/* <button className="btn btn-secondary" onClick={downloadCV}>
                 Download CV
-              </button>
+              </button> */}
             </div>
             <div className="hero-social">
               <a
