@@ -92,8 +92,8 @@
   aspect-ratio: 1/1;
   object-fit: cover;
   border-radius: 20px;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
-  border: 4px solid rgba(255, 255, 255, 0.1);
+  /* box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2); */
+  /* border: 4px solid rgba(255, 255, 255, 0.1); */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -238,7 +238,8 @@
 
 @media (max-width: 968px) {
   .hero-container {
-    flex-direction: column-reverse; /* Image on top on mobile/tablet */
+    /* flex-direction: column-reverse; Image on top on mobile/tablet */
+    flex-direction: column;
     text-align: center;
     gap: 3rem;
   }
@@ -293,6 +294,13 @@
   }
   
   .hero-image {
-    width: 80%;
+    /* Gunakan lebar yang responsif terhadap layar HP */
+    width: 100%; 
+    
+    /* Batasi ukuran maksimal agar tidak pecah atau memenuhi layar */
+    max-width: 250px; 
+    
+    /* Pastikan posisi di tengah */
+    margin: 0 auto;
   }
 }

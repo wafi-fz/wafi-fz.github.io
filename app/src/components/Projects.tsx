@@ -135,7 +135,7 @@ const Projects = () => {
           ))}
         </div>
 
-        <div className="portfolio-cta">
+        {/* <div className="portfolio-cta">
           <p>Want to see more of my work?</p>
           <a
             href="https://drive.google.com/file/d/1EdRdMUaiQzNAT6KfC5vjigc33QHVX_sX/view"
@@ -145,7 +145,7 @@ const Projects = () => {
           >
             View Full Portfolio
           </a>
-        </div>
+        </div> */}
       </div>
     </section>
   )
